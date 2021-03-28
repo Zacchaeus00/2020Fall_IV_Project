@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="//d3js.org/topojson.v1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js" integrity="sha512-wNH6xsp2n8CfB91nrBtfc4sfLwYPBMjSWVUwQOp60AYYXH6i8yCwuKFZ4rgK2i6pQek/b+bSyR7b01/922IBzQ==" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+            <label for="year" class="pull-left">select a year:</label>
+            <input id="rangeInput" type="range" value='2010' min="2010" max="2014" oninput="amount.value=rangeInput.value" />
+            <input id="amount" type="number" value="2010" min="2010" max="2014" oninput="rangeInput.value=amount.value" />
+        </div>
+        <div id="calendar"></div>
+        <div>
+            <div id='map_div'>
+                <svg id='map'></svg>
+            </div>
+            <div>
+                <div id='table_div'>
+                    <table id='table'></table>
+                </div>
+                <div>
+                    <svg id='stacked_bar'></svg>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

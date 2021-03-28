@@ -1,0 +1,90 @@
+
+#calendar {
+    margin: 20px;
+  }
+  .month {
+    margin-right: 8px;
+  }
+  .label {
+    font-size: 85%;
+    fill: #3f3f3f;
+    font-family: Arial, Helvetica;
+  }
+  .day.hover {
+    stroke: #6d6E70;
+    stroke-width: 2;
+  }
+  .day.focus {
+    stroke: #ffff33;
+    stroke-width: 2;
+  }
+  .day.click {
+    stroke: #6d6E70;
+    stroke-width: 2;
+  }
+
+  .subunit.SCT { fill: #ddc; }
+  .subunit.WLS { fill: #cdd; }
+  .subunit.NIR { fill: #cdc; }
+  .subunit.ENG { fill: #dcd; }
+  
+  .subunit.IRL,
+  .subunit-label.IRL {
+    display: none;
+  }
+  
+  .subunit-boundary {
+    fill: none;
+    stroke: #777;
+    stroke-dasharray: 2,2;
+    stroke-linejoin: round;
+  }
+  
+  .subunit-boundary.IRL {
+    stroke: #aaa;
+  }
+  
+  .subunit-label {
+    fill: #777;
+    fill-opacity: .5;
+    font-size: 20px;
+    font-weight: 300;
+    text-anchor: middle;
+  }
+  
+  .place,
+  .place-label {
+    fill: #444;
+  }
+  
+  text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    pointer-events: none;
+  }
+
+#map_div{
+  float: left
+}
+
+.label{
+  font-size: 13px;
+}
+
+table{
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: center; 
+  vertical-align: middle;
+}
+
+tr{
+  background-color: #4e0c0c;
+  font-size: 13px
+}
+
+td{
+  background-color: #94cbf0;
+  color: #000000;
+  font-weight: 700;
+}
